@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>Health facilities Application</title>
+    <logo>assets/images/dew2.png</logo>
+    <style>
+        <colors>0x0,0xff9999,0x66,0x66,0xcc0099</colors>
+        <alpha>0.61</alpha>
+        <font name="Verdana"/>
+        <titlefont name="Arial Unicode MS"/>
+        <subtitlefont name="Arial CYR"/>
+    </style>
+    <!-- replace the following url with your own geometryservice -->
+    <geometryservice url="https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer"/>
+    <subtitle>in OMAN</subtitle>
+    <widget url="widgets/OverviewMap/OverviewMapWidget.swf" config="widgets/OverviewMap/OverviewMapWidget.xml" right="0" bottom="0"/>
+    <widget url="widgets/MapSwitcher/MapSwitcherWidget.swf" config="widgets/MapSwitcher/MapSwitcherWidget.xml" right="20" top="55"/>
+    <widget url="widgets/HeaderController/HeaderControllerWidget.swf" config="widgets/HeaderController/HeaderControllerWidget.xml" left="0" top="0"/>
+    <widget url="widgets/Navigation/NavigationWidget.swf" config="widgets/Navigation/NavigationWidget.xml" left="10" top="50"/>
+    <widget url="widgets/Coordinate/CoordinateWidget.swf" config="widgets/Coordinate/CoordinateWidget.xml" label="Coordinate" left="3" bottom="1"/>
+    <map attributionvisible="true" esrilogovisible="true" openhandcursorvisible="false" scalebarvisible="true" scalebar="default" zoomslidervisible="false" wraparound180="true" addarcgisbasemaps="false" initialextent="4950948.755617414 1883485.9445360634 7878792.687052026 3062450.6688063084" wkid="102100" top="40" portalurl="https://www.arcgis.com/">
+        <basemaps>
+            <layer type="osm" label="OpenStreetMap" icon="https://www.arcgis.com/sharing/rest/content/items/5d2bfa736f8448b3a1708e1f6be23eed/info/thumbnail/temposm.jpg" visible="true"/>
+            <layer type="tiled" label="Imagery" icon="https://www.arcgis.com/sharing/rest/content/items/86de95d4e0244cba80f0fa2c9403a7b2/info/thumbnail/tempimagery.jpg" url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="false"/>
+            <layer type="tiled" label="Streets" icon="https://www.arcgis.com/sharing/rest/content/items/d8855ee4d3d74413babfb0f41203b168/info/thumbnail/world_street_map.jpg" url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" visible="false"/>
+            <layer type="tiled" label="Imagery with Labels" icon="https://www.arcgis.com/sharing/rest/content/items/413fd05bbd7342f5991d5ec96f4f8b18/info/thumbnail/imagery_labels.jpg" url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="false"/>
+            <layer type="tiled" label="Imagery with Labels" url="https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer" visible="false" reference="true"/>
+            <layer type="tiled" label="Light Gray Canvas" icon="https://www.arcgis.com/sharing/rest/content/items/8b3b470883a744aeb60e5fff0a319ce7/info/thumbnail/light_gray_canvas.jpg" url="https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer" visible="false"/>
+            <layer type="tiled" label="Light Gray Canvas" url="https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer" visible="false" reference="true"/>
+            <layer type="tiled" label="Topographic" icon="https://www.arcgis.com/sharing/rest/content/items/6e03e8c26aad4b9c92a87c1063ddb0e3/info/thumbnail/topo_map_2.jpg" url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" visible="false"/>
+        </basemaps>
+        <operationallayers>
+            <layer type="tiled" label="hospital_application" url="http://localhost:6080/arcgis/rest/services/hospital_application/MapServer" visible="true"/>
+        </operationallayers>
+    </map>
+    <widgetcontainer layout="float">
+        <widget url="widgets/Draw/DrawWidget.swf" config="widgets/Draw/DrawWidget.xml" label="Draw" icon="assets/images/i_draw2.png"/>
+        <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="Print" icon="assets/images/i_print.png"/>
+        <widget url="widgets/LayerList/LayerListWidget.swf" config="widgets/LayerList/LayerListWidget_1.xml" label="Layer List" icon="assets/images/i_layers.png"/>
+        <widget url="widgets/Identify/IdentifyWidget.swf" config="widgets/Identify/IdentifyWidget_1.xml" label="Identify Widget" icon="assets/images/i_info.png"/>
+        <widget url="widgets/ImportDataFile/ImportDataFileWidget.swf" config="widgets/ImportDataFile/ImportDataFileWidget_1.xml" label="ImportDataFile" icon="assets/images/i_widget.png"/>
+        <widget url="widgets/Measure/MeasureWidget.swf" config="widgets/Measure/MeasureWidget_1.xml" label="Measure" icon="assets/images/i_measure2.png"/>
+        <widget url="widgets/ElevationProfile/ElevationProfileWidget.swf" config="widgets/ElevationProfile/ElevationProfileWidget_1.xml" label="Elevation Profile" icon="assets/images/i_epwidget.png"/>
+        <widget url="widgets/ViewShed/ViewShedWidget.swf" config="widgets/ViewShed/ViewShedWidget_1.xml" label="ViewShed" icon="assets/images/i_widget.png"/>
+        <widget url="widgets/BufferDistance/BufferDistanceWidget.swf" config="widgets/BufferDistance/BufferDistanceWidget_2.xml" label="Point Buffer Widget" icon="assets/images/i_buffer40.png"/>
+        <widget url="widgets/Legend/LegendWidget.swf" config="widgets/Legend/LegendWidget_1.xml" label="Legend" icon="assets/images/Legend32.png"/>
+        <widget url="widgets/Bookmark/BookmarkWidget.swf" config="widgets/Bookmark/BookmarkWidget_1.xml" label="Bookmark" icon="assets/images/i_bookmark.png"/>
+        <widget url="widgets/Search/SearchWidget.swf" config="widgets/Search/SearchWidget_1.xml" label="Search with Select" icon="assets/images/i_search.png"/>
+        <widget url="widgets/Locate/LocateWidget.swf" config="widgets/Locate/LocateWidget_1.xml" label="Locator" icon="assets/images/i_target.png"/>
+    </widgetcontainer>
+    <widgetcontainer paneltype="left" initialstate="collapsed">
+        <widget url="widgets/Directions/DirectionsWidget.swf" config="widgets/Directions/DirectionsWidget.xml" label="Directions" icon="assets/images/TableOpen32.png"/>
+    </widgetcontainer>
+</configuration>
