@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////
+//
+// Copyright © 2008 ESRI
+//
+// All rights reserved under the copyright laws of the United States.
+// You may freely redistribute and use this software, with or
+// without modification, provided you include the original copyright
+// and use restrictions.  See use restrictions in the file:
+// <install location>/FlexViewer/License.txt
+//
+////////////////////////////////////////////////////////////////////////////////
+SERVICIOS
+
+<mapservice id="prueba" label="servicio" type="dynamic" visible="true" alpha="1">http://161.111.72.5/USIG/rest/services/Facundo_capas/MapServer/6</mapservice>
+
+
+
+
+<configuration>
+	<activeLayer>
+		<mapservice label="VERDE" type="tiled" visible="false"  alpha="1">http://161.111.72.5/USIG/rest/services/facunverde/MapServer</mapservice>
+        <mapservice label="PNOAMAD" type="tiled" visible="false" alpha="1">http://161.111.72.5/USIG/rest/services/PnoaMAD/MapServer</mapservice>
+        <mapservice label="Facundo"  type="tiled" visible="false" alpha="1">http://161.111.72.5/USIG/rest/services/carton/MapServer</mapservice>                  
+        <mapservice label="AZUL"  type="tiled" visible="false" alpha="1">http://161.111.72.5/USIG/rest/services/facunazul/MapServer</mapservice>  
+        <mapservice label="ROJO"  type="tiled" visible="false" alpha="1">http://161.111.72.5/USIG/rest/services/facunrojo/MapServer</mapservice>
+	</activeLayer>
+</configuration>-->
