@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration>
+	<locator>
+		http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Address_NA/GeocodeServer
+	</locator>
+</configuration>
