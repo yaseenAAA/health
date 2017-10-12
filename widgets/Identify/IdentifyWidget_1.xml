@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<configuration>
+    <identifylayeroption>visible</identifylayeroption>
+    <identifytolerance>5</identifytolerance>
+    <defaultzoomscale>5000</defaultzoomscale>
+    <keepidentifyactive>true</keepidentifyactive>
+    <returngeometryforzoom>true</returngeometryforzoom>
+    <enablelineselect>true</enablelineselect>
+    <enableextentselect>true</enableextentselect>
+    <enablepolyselect>true</enablepolyselect>
+    <enablecircleselect>true</enablecircleselect>
+    <enableellipseselect>true</enableellipseselect>
+    <enablemouseovergraphicsinfo>false</enablemouseovergraphicsinfo>
+    <enablemouseoverrecordinfo>true</enablemouseoverrecordinfo>
+    <enablegraphicclickinfo>true</enablegraphicclickinfo>
+    <usemaptime>false</usemaptime>
+    <infoautoclosemilliseconds>2000</infoautoclosemilliseconds>
+    <autoactivatedtool>mappoint</autoactivatedtool>
+    <excludebasemaps>false</excludebasemaps>
+    <disablepopuplinks>false</disablepopuplinks>
+    <disablelayerdropdown>false</disablelayerdropdown>
+    <disablealllayerschoice>false</disablealllayerschoice>
+    <replacenullswithemptystring>true</replacenullswithemptystring>
+    <labels>
+        <zoom2message>Click to Zoom to Point</zoom2message>
+        <identifylabel>Identify</identifylabel>
+        <resultslabel>Results</resultslabel>
+        <descriptionlabel>Use the identify tool to identify features on the map:</descriptionlabel>
+        <pointlabel>Identify by Point</pointlabel>
+        <linelabel>Identify by Polyline</linelabel>
+        <rectlabel>Identify by Rectangle</rectlabel>
+        <polylabel>Identify by Polygon</polylabel>
+        <circlelabel>Identify by Circle</circlelabel>
+        <ellipselabel>Identify by Ellipse</ellipselabel>
+        <clearlabel>Clear</clearlabel>
+        <loadinglabel>Loading...</loadinglabel>
+        <removeresultmessage>Remove Result</removeresultmessage>
+        <idfrom>Identify From</idfrom>
+        <noresultsfoundlabel>No Results Found</noresultsfoundlabel>
+        <resultsfoundlabel>Results Found</resultsfoundlabel>
+        <alllayers>All Layers</alllayers>
+        <layersremaining>layers remaining:</layersremaining>
+        <copylabel>Copy results to clipboard</copylabel>
+    </labels>
+    <layers onlythese="true">
+        <layer>
+            <name>المستشفيات</name>
+            <id>0</id>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer</url>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+                <field name="الموقع" alias="الموقع"/>
+                <field name="الاحداثيات__X_" alias="الاحداثيات (X)"/>
+                <field name="الاحداثيات__Y_" alias="الاحداثيات (Y)"/>
+                <field name="أرقام_التواصل_2" alias="أرقام التواصل 2"/>
+                <field name="أرقام_التواصل_الطوارئ" alias="أرقام التواصل_الطوارئ"/>
+            </fields>
+            <links/>
+            <zoomscale>2000</zoomscale>
+            <forcescale>true</forcescale>
+        </layer>
+        <layer>
+            <name>المجمعات_الصحية</name>
+            <id>1</id>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer</url>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="الموقع" alias="الموقع"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+                <field name="الاحداثيات__X_" alias="الاحداثيات (X)"/>
+                <field name="الاحداثيات__Y_" alias="الاحداثيات (Y)"/>
+                <field name="أرقام_التواصل_الطوارئ" alias="أرقام التواصل_الطوارئ"/>
+                <field name="أرقام_التواصل_2" alias="أرقام التواصل 2"/>
+            </fields>
+            <links/>
+            <zoomscale>2000</zoomscale>
+            <forcescale>true</forcescale>
+        </layer>
+        <layer>
+            <name>المراكز_الصحية</name>
+            <id>2</id>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer</url>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+                <field name="الموقع" alias="الموقع"/>
+                <field name="الاحداثيات__X_" alias="الاحداثيات (X)"/>
+                <field name="الاحداثيات__Y_" alias="الاحداثيات (Y)"/>
+                <field name="أرقام_التواصل_الطوارئ" alias="أرقام التواصل_الطوارئ"/>
+                <field name="أرقام_التواصل_2" alias="أرقام التواصل 2"/>
+            </fields>
+            <links/>
+            <zoomscale>2000</zoomscale>
+            <forcescale>true</forcescale>
+        </layer>
+        <layer>
+            <name>المديريات_والدوائر</name>
+            <id>3</id>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer</url>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الموقع" alias="الموقع"/>
+                <field name="رقم_التواصل" alias="رقم التواصل"/>
+                <field name="الاحداثيات__X_" alias="الاحداثيات (X)"/>
+                <field name="الاحداثيات__Y_" alias="الاحداثيات (Y)"/>
+            </fields>
+            <links/>
+            <zoomscale>2000</zoomscale>
+            <forcescale>false</forcescale>
+        </layer>
+        <excludelayer name="Condos"/>
+        <excludelayer id="0" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer"/>
+        <excludelayer id="0" url="http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer"/>
+        <excludelayer url="http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer"/>
+        <excludelayer url="http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"/>
+    </layers>
+    <symbols>
+        <simplefillsymbol color="0x448ccb" alpha="0.4" style="solid">
+            <outline color="0x448ccb" alpha="0.8" width="2" style="solid"/>
+        </simplefillsymbol>
+        <simplemarkersymbol color="0x448ccb" alpha="0.8" style="circle" angle="0" size="12">
+            <outline color="0xffffff" alpha="0.8" width="1" style="solid"/>
+        </simplemarkersymbol>
+        <simplelinesymbol color="0x448ccb" alpha="0.8" width="2" style="solid"/>
+        <picturemarkersymbol url="assets/images/i_info.png" height="30" width="30" xoffset="0" yoffset="0" angle="0"/>
+    </symbols>
+</configuration>
