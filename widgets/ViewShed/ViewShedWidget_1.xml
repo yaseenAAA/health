@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<configuration>
+    <url>http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed</url>
+</configuration>
