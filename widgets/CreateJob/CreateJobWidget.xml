@@ -1,0 +1,7 @@
+<configuration>	
+  <workflowService>
+    <wmServerUrl>http://dingy7:8399/arcgis/rest/services/WMService/WMServer</wmServerUrl>          
+    <geometryServerUrl>http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer</geometryServerUrl>
+    <defaultUserName>ding5252</defaultUserName>   		
+  </workflowService>
+</configuration>
