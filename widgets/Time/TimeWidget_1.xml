@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<configuration>
+    <dateformat>YYYY</dateformat>
+    <loop>false</loop>
+    <singlethumbastimeinstant>false</singlethumbastimeinstant>
+    <thumbcount>1</thumbcount>
+    <thumbmovingrate>1000</thumbmovingrate>
+    <timeextent>
+        <starttime>Sun Apr 25 00:00:00 GMT+0400 2010</starttime>
+        <endtime>Fri Jun 4 00:00:00 GMT+0400 2010</endtime>
+    </timeextent>
+    <timestops>
+        <timestopsinterval>1</timestopsinterval>
+        <timestopsunits>days</timestopsunits>
+    </timestops>
+</configuration>
