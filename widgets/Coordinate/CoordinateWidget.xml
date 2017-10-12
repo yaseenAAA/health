@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<configuration>
+    <outputunit>geo</outputunit>
+    <labelstyle fontsize="11"/>
+</configuration>
