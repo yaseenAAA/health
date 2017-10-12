@@ -1,0 +1,16 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace comp "widgets.FeatureBlurbsTool.components.*";
+
+comp|FeatureLabelTool {
+    skinClass: ClassReference("widgets.FeatureBlurbsTool.components.skins.FeatureLabelToolSkin");
+}
+
+comp|ServiceDetailLists {
+    skinClass: ClassReference("widgets.FeatureBlurbsTool.components.skins.ServiceDetailListsSkin");
+}
+
+comp|ServiceDetailLists s|Button {
+    skinClass: ClassReference("widgets.FeatureBlurbsTool.components.skins.SmallButtonSkin");
+}
