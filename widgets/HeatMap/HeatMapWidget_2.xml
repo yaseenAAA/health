@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<configuration>
+    <layers>
+        <layer>
+            <name>Earthquakes HeatMap</name>
+            <url>http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Earthquakes/Since_1970/MapServer/0</url>
+            <outFields>YYYYMMDD,Magnitude,Num_Injured,Num_Deaths,Name</outFields>
+            <useproxy>false</useproxy>
+            <useamf>true</useamf>
+            <defaultquery>1=1</defaultquery>
+            <querytemplate>Magnitude &gt; REPLACE_STR</querytemplate>
+            <types>2,4,6,8</types>
+            <type_descs>Mag &gt; 2,Mag &gt; 4,Mag &gt; 6,Mag &gt; 8</type_descs>
+        </layer>
+    </layers>
+    <ui>
+        <widget_dimensions>
+            <width>410</width>
+            <height>206</height>
+        </widget_dimensions>
+        <icons>
+            <base_url>widgets/HeatMap/assets/images/</base_url>
+            <main_icon>i_rainbow.png</main_icon>
+            <main_label>Main Panel</main_label>
+            <settings_icon>i_options.png</settings_icon>
+            <settings_label>Settings Panel</settings_label>
+        </icons>
+        <refresh_label>refreshing layer...</refresh_label>
+        <query>
+            <comp_label>Earthquake Magnitude:</comp_label>
+            <heatmapquery_prompt>default selection</heatmapquery_prompt>
+            <featurecount_label>features contained</featurecount_label>
+        </query>
+        <timeslider>
+            <enabled_by_default>false</enabled_by_default>
+            <loop>true</loop>
+            <thumbcount>2</thumbcount>
+            <thumbmovingrate>1200</thumbmovingrate>
+            <dateformat>MMM, yyyy</dateformat>
+        </timeslider>
+        <transparency>
+            <comp_label>Transparency:</comp_label>
+            <defaulttransparency>0.8</defaulttransparency>
+        </transparency>
+        <density>
+            <comp_label>Heat radius:</comp_label>
+            <defaultdensity>15</defaultdensity>
+        </density>
+        <symbol>
+            <comp_label>Colors:</comp_label>
+            <defaulttheme>CUSTOM</defaulttheme>
+            <customtheme>0xEBED95,0xEDB019,0xD24F0B,0xD21813,0xBA5B6D</customtheme>
+        </symbol>
+    </ui>
+</configuration>
