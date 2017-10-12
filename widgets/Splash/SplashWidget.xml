@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+    <width>0</width>
+    <height>0</height>
+    <content><![CDATA[
+             <p align='center'>
+                 <img src='assetss/globe.png'/>
+                 <br/>
+                 <b><a href="http://links.esri.com/flexviewer" target='_blank'><font size="+2" color="#FFFF00"><b>Health facilities in Oman</b><img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiqmuiJ8dvWAhUKVhoKHfhKC-sQjRwIBw&url=https%3A%2F%2Fwww.moh.gov.om%2Fweb%2Fdirectorate-general-health-services-muscat%2Fdisplay-page&psig=AOvVaw0CUI5oYmC1je8sU2Rko0Gw&ust=1507375360595894"/></font></a></b>
+             </p>
+       ]]></content>
+    <labels>
+        <btnlabel>OK</btnlabel>
+    </labels>
+</configuration>
