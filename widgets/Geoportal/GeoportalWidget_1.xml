@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<configuration>
+    <geoportal>
+        <url>http://www.geoportal.cl/geoportal</url>
+    </geoportal>
+    <labels>
+        <advancedSearch>Advanced Search</advancedSearch>
+        <basicSearch>Basic Search</basicSearch>
+        <bboxAuto>Auto Extent</bboxAuto>
+        <bboxManual>Manual Extent</bboxManual>
+        <bboxTitle>Extent</bboxTitle>
+        <bboxX>Latitude</bboxX>
+        <bboxY>Longitude</bboxY>
+        <dateAfter>After</dateAfter>
+        <dateBefore>Before</dateBefore>
+        <hideResults>Hide results</hideResults>
+        <maxResults>Order and results number</maxResults>
+        <messageDateAfter>'After' date is incorrect</messageDateAfter>
+        <messageDateBefore>'Before' date is incorrect</messageDateBefore>
+        <messageNoResults>No results</messageNoResults>
+        <messageTitle>Geoportal Search</messageTitle>
+        <orderTitle>Order by</orderTitle>
+        <orderTypeRelevance>Relevance</orderTypeRelevance>
+        <orderTypeTitle>Title</orderTypeTitle>
+        <orderTypeDateAscending>Date ascending</orderTypeDateAscending>
+        <orderTypeDateDescending>Date descending</orderTypeDateDescending>
+        <results>results...</results>
+        <searchTypeAll>Any</searchTypeAll>
+        <searchTypeAny>Any</searchTypeAny>
+        <searchTypeExact>Exact</searchTypeExact>
+        <searchTypeTitle>Search</searchTypeTitle>
+        <showResults>Show results</showResults>
+    </labels>
+</configuration>
