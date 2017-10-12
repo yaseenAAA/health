@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<configuration>
+    <zoomscale>50000</zoomscale>
+    <shareresults>false</shareresults>
+    <layers>
+        <layer>
+            <name>المستشفيات</name>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer/0</url>
+            <textsearchlabel>Select by attribute</textsearchlabel>
+            <titlefield>Name</titlefield>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+            </fields>
+            <orderbyfields>Name ASC</orderbyfields>
+        </layer>
+        <layer>
+            <name>المجمعات_الصحية</name>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer/1</url>
+            <textsearchlabel>Select by attribute</textsearchlabel>
+            <titlefield>Name</titlefield>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="الموقع" alias="الموقع"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+            </fields>
+            <orderbyfields>Name ASC</orderbyfields>
+        </layer>
+        <layer>
+            <name>المراكز_الصحية</name>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer/2</url>
+            <textsearchlabel>Select by attribute</textsearchlabel>
+            <titlefield>Name</titlefield>
+            <fields>
+                <field name="Name" alias="Name"/>
+                <field name="المحافظة" alias="المحافظة"/>
+                <field name="الولاية" alias="الولاية"/>
+            </fields>
+            <orderbyfields>الولاية ASC</orderbyfields>
+        </layer>
+        <layer>
+            <name>المديريات_والدوائر</name>
+            <url>http://localhost:6080/arcgis/rest/services/hospital_application/MapServer/3</url>
+            <textsearchlabel>Select by attribute</textsearchlabel>
+            <titlefield>Name</titlefield>
+            <fields>
+                <field name="Name" alias="Name"/>
+            </fields>
+            <orderbyfields>Name ASC</orderbyfields>
+        </layer>
+    </layers>
+</configuration>
