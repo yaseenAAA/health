@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<configuration>
+    <facilities>
+        <url>http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_PublicSafety_Louisville/MapServer/3</url>
+    </facilities>
+    <incidents>
+        <url/>
+    </incidents>
+    <closestFacilitySvc>
+        <url>http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Network/USA/NAServer/Closest%20Facility</url>
+    </closestFacilitySvc>
+    <routeRequestAccumulatedAttributes>
+        <attrName>Length</attrName>
+    </routeRequestAccumulatedAttributes>
+    <symbology>
+        <routeZOrderAttrName>FacilityRank</routeZOrderAttrName>
+        <routeRendererAttrName>FacilityRank</routeRendererAttrName>
+        <routes>
+            <route rank="1" color="0x0066FF" width="2" alpha="1" style="solid"/>
+            <route rank="2" color="0xFF0000" width="5" alpha="0.85" style="solid"/>
+            <route rank="3" color="0xFFD700" width="7" alpha="0.85" style="solid"/>
+            <route rank="4" color="0x000000" width="9" alpha="1" style="solid"/>
+        </routes>
+        <barrier style="dashdot" color="0xAA0000" width="3"/>
+        <event size="15" style="circle" outlineColor="0x000000" outlineWidth="2" markerColor="0x00CC00"/>
+        <animateRoutesDuration>4000</animateRoutesDuration>
+    </symbology>
+</configuration>
